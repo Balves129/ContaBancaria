@@ -17,14 +17,16 @@ public class App {
         System.out.println("Digite o saldo: ");
         double saldoCC = leitor.nextDouble();
 
+        System.out.println("Declare o cpf do portador: ");
+        int cpfCC = leitor.nextInt();
        
-        Cliente clienteCC = new Cliente(nomeCC,idadeCC);
+        Cliente clienteCC = new Cliente(nomeCC,idadeCC, cpfCC);
         Conta contaCC = new Conta(saldoCC, numeroCC, clienteCC);
         
         leitor.close();
 
-        System.out.format("\nConta corrente\nCliente: %s\nIdade: %d\nConta:%d\nSaldo: %.2f\n",contaCC.cliente.nome,
-        contaCC.cliente.idade,contaCC.numero ,contaCC.saldo);
+        System.out.format("\nConta corrente\nCliente: %s\nIdade: %d\nConta:%d\nSaldo: %.2f\nRegistro de pessoa fisica:%d\n",contaCC.cliente.nome,
+        contaCC.cliente.idade,contaCC.numero ,contaCC.saldo, cpfCC);
     };
 
 }

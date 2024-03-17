@@ -1,7 +1,7 @@
 
 public class Conta {
-    
-    int numero;
+    //Classe conta possui 3 variaveis de instancia
+    int numero;  //numero da conta
     double saldo;
 //classe Cliente => que tem uma variavel cliente => que recebe meu objeto Cliente
     Cliente cliente;
